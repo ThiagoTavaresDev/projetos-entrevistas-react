@@ -3,7 +3,7 @@
 import { Route, Routes } from 'react-router-dom'
 
 import { Home } from './pages/Home'
-import { Pagamento } from './pages/pagamento'
+import { Pagamento } from './pages/Pagamento'
 
 function App() {
  
