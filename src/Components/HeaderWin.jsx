@@ -1,5 +1,5 @@
 import React from 'react'
-import { Header, Anchor } from '../css/style'
+import { Header, Anchor } from '../style'
 
 
 export const HeaderWin = () => {

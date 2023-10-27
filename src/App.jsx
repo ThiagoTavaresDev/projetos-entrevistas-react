@@ -1,5 +1,5 @@
-import { useState } from 'react'
-import { Container ,  Section, ContainProducts, CountContainer, DivContainCount} from './css/style'
+
+import { Container ,  Section, ContainProducts, CountContainer, DivContainCount} from './style'
 import imagem1 from './assets/image-1.svg'
 import imagem2 from './assets/image-2.svg'
 import imagem3 from './assets/image.svg'
