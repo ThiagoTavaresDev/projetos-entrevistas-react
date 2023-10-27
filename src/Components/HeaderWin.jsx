@@ -1,20 +1,24 @@
 import React from 'react'
 import { Header, Anchor } from '../Style'
+import { Link } from 'react-router-dom'
+
 
 
 export const HeaderWin = () => {
   return (
     <>
         <Header>
-            <Anchor href="#">
+        
+            <Anchor to='/' >
                 Sacola
             </Anchor>  
-            <Anchor href="#">
+            <Anchor to='/Pagamento'>
                 Pagamento
             </Anchor>  
-            <Anchor href="#">
+            <Anchor to='/confirmacao'>
                Confirmação
             </Anchor>  
+      
          </Header>
     </>
   )

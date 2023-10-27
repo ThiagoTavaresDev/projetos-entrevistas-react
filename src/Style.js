@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const Container = styled.div`
@@ -17,7 +18,7 @@ export const Header = styled.header`
 
 
 `
-export const Anchor = styled.a`
+export const Anchor = styled(Link)`
         color: #878787;
         font-size: 0.875rem;
         line-height: 1.5rem;
@@ -39,6 +40,16 @@ export const Section = styled.section`
     margin: 20px 8px;
     box-shadow: 1px 1px 5px #CCCCCC;
     
+
+    h1{
+        padding: 12px;
+        font-size: 20px;
+        font-weight: 400;
+    }
+    #divContainInput{
+        display: flex;
+        
+    }
 
 `
 export const ContainProducts = styled.div`
@@ -78,6 +89,7 @@ export const ContainProducts = styled.div`
         font-weight: bold;
 
     }
+  
 
 `
 export const CountContainer = styled.div`
@@ -122,4 +134,39 @@ export const DivContainCount  = styled.div`
     button:hover{
         opacity: 0.8;
     }
+`
+export const Label = styled.label`
+    display: block;
+    font-size: 0.875rem;
+    margin: 10px 10px 0px;
+    span{
+        color: #515151;
+
+    }
+`
+export const Input = styled.input`
+    width: 333.47px;
+    height: 44px;
+    margin: 5px 10px;
+    font-size: 0.875rem;
+    padding-left: 8px;
+    color: #000;
+    font-weight: 400;
+    outline: none;
+    border: 1px solid rgba(0,0,0,0.18)
+    
+  
+`
+export const InputDiferente = styled.input`
+    width: 160px;
+    height: 44px;
+    font-size: 0.875rem;
+    margin: 5px 10px;
+    padding-left: 8px;
+    color: #000;
+    font-weight: 400;
+    outline: none;
+    border: 1px solid rgba(0,0,0,0.18)
+    
+
 `
