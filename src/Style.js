@@ -50,6 +50,11 @@ export const Section = styled.section`
         display: flex;
         
     }
+    #titleConfirm{
+        padding: 10px 12px 0px;
+
+    }
+
 
 `
 export const ContainProducts = styled.div`
@@ -66,7 +71,7 @@ export const ContainProducts = styled.div`
     }
 
     p{
-        width: 180px;
+        width: 60%;
         margin-top: 10px;
         font-size: 0.75rem;
         font-weight: bold;
@@ -125,7 +130,8 @@ export const DivContainCount  = styled.div`
         border: 1px solid #9222DC;
         background-color: #9222DC;
         color: white;
-        padding: 15px 71px;
+        padding: 15px 30px;
+        width: 100%;
         border-radius: 4px;
         font-size: 1rem;
         font-weight: bold;
@@ -168,5 +174,38 @@ export const InputDiferente = styled.input`
     outline: none;
     border: 1px solid rgba(0,0,0,0.18)
     
+
+`
+export const ModalPaymentSucess = styled.div`
+    width: 360px;
+    height: 152px;
+    border-radius: 4px;
+    border: 1px;
+    margin: 20px 5px;
+    background-color: #fff;
+    box-shadow: 1px 1px 5px #CCCCCC;
+
+    h1{
+        font-size: 22px;
+        color: #000000;
+    }
+    div{
+     
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        row-gap: 12px;
+    }
+    span{
+        color: #515151;
+    }
+`
+export const ContainerPayment = styled.div`
+     margin-top: 16px;
+     width: 373px;
+     height: 803px;
+     box-shadow: 2px 2px 20px grey;
+
 
 `

@@ -1,10 +1,26 @@
 
+import { useState } from 'react'
 import { HeaderWin } from '../Components/HeaderWin' 
 import { NextToPay } from '../Components/NextToPay'
 import { Container ,  Section, CountContainer, DivContainCount, Label, Input, InputDiferente} from '../Style'
 
 
-export const Pagamento = () => {
+export const Pagamento = (props) => {
+    const [valueInput, setValueInput] = useState('')
+ 
+    function handleVerify(event){
+
+        setValueInput(event.target.value)
+        const regex = /^4[0-9]{12}(?:[0-9]{3})?$/g
+        const regexName = /^[A-Z-a-z]/g
+        if(valueInput.match(regex) || valueInput.match(regexName)){
+
+        }
+    
+
+    }
+
+
   return (
     <>
         
@@ -17,12 +33,12 @@ export const Pagamento = () => {
            
             <span>Número</span>
          </Label > 
-            <Input />
+            <Input onChange={handleVerify}/>
             <Label >  
            
            <span>Nome do titular do cartão</span>
         </Label > 
-           <Input />
+           <Input onChange={handleVerify}/>
 
            
          
@@ -32,14 +48,14 @@ export const Pagamento = () => {
             <Label>
             <span>Data de validade</span>
            </Label>
-                <InputDiferente />
+                <InputDiferente onChange={handleVerify}/>
             </div>
             
             <div>
             <Label>
             <span>Código CVV</span>
            </Label>
-                <InputDiferente />
+                <InputDiferente onChange={handleVerify}/>
             </div>
             </div>
         
@@ -49,7 +65,7 @@ export const Pagamento = () => {
         <CountContainer>
 
             <DivContainCount>
-              <NextToPay/>
+              <NextToPay texto={'Finalizar pedido'}/>
             </DivContainCount>
              
         </CountContainer>

@@ -3,7 +3,11 @@
 import { Route, Routes } from 'react-router-dom'
 
 import { Home } from './pages/Home'
-import { Pagamento } from './pages/Pagamento'
+import { Pagamento} from './pages/Pagamento'
+import { Confirmacao } from './pages/Confirmacao'
+
+
+
 
 function App() {
  
@@ -14,10 +18,12 @@ function App() {
         </Route> 
         <Route path='/Pagamento' element={<Pagamento/>}>
         </Route> 
-      
+        <Route path='/confirmacao' element={<Confirmacao />}>
+        </Route> 
+            
      
      </Routes>
-    
+
     </>
   )
 }

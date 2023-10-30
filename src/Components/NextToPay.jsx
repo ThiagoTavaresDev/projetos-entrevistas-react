@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const NextToPay = () => {
+export const NextToPay = ({texto}) => {
   return (
   <>
     <div>
@@ -19,7 +19,7 @@ export const NextToPay = () => {
     <span>Subtotal:</span>
     <span>R$ 624,80</span>
   </div>
-  <button>Seguir para o pagamento</button>
+  <button>{texto}</button>
   </>
   )
 }

@@ -34,7 +34,7 @@ export const Home = () => {
         <CountContainer>
 
             <DivContainCount>
-              <NextToPay/>
+              <NextToPay texto={'Seguir para o pagamento'}/>
             </DivContainCount>
              
         </CountContainer>
